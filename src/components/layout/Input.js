@@ -1,17 +1,23 @@
-import React from 'react'
+import React from "react";
 
 const Input = (props) => {
-    const {placeholder,value,onChange,type = "text",name} = props;
-    return (
-        <input
-           type={type}
-           placeholder={placeholder}
-           name={name}
-           value={value}
-           onChange={onChange}
-           className="form-control"
-         />
-    )
-}
+  const {
+    type = "text",
+    placeholder = "placeholder text",
+    name = "name",
+    value = "value",
+    onChange,
+  } = props;
+  return (
+    <input
+      type={type}
+      className="form-control"
+      placeholder={placeholder}
+      name={name}
+      value={value}
+      onChange={onChange}
+    />
+  );
+};
 
-export default Input
+export default Input;

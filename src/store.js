@@ -3,10 +3,10 @@ import 'firebase/auth'
 import 'firebase/firestore' //<- needed if using firestore
 // import 'firebase/functions' // <- needed if using httpsCallable
 import { createStore, combineReducers, compose } from 'redux'
-import {
-  ReactReduxFirebaseProvider,
-  firebaseReducer
-} from 'react-redux-firebase'
+import "firebase/auth";
+import "firebase/firestore";
+
+import {ReactReduxFirebaseProvider,firebaseReducer} from 'react-redux-firebase'
 import {composeWithDevTools} from 'redux-devtools-extension';
 import { createFirestoreInstance, firestoreReducer } from 'redux-firestore' //<- needed if using firestore
  
